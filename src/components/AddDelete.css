@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+#redirectButton1,
+#redirectButton2,
+.box .btn {
+    text-decoration: none; /* Remove underline */
+}
+
+#redirectButton1,
+#redirectButton2 {
+    color: white !important; /* Make text permanently white */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    z-index: 99;
+}
+
+.OnlineVoting{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+
+.wrapper{
+    position: relative;
+    /* width: 1000px;
+    height: 800px; */
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   overflow: hidden;
+
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #a8c021;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    Z-index: 1;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.btn-hi {
+    width: 50%;
+    height: 30px;
+    background: #11eb5a;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: lem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.label {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   overflow: hidden;
+}
+
+.delete-btn
+{
+    width: 100%;
+    height: 30px;
+    background: #eb1111;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: lem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 80px;
+    margin-top: 5px;
+}
+table
+{
+    width: 80%;
+            border-collapse: collapse;
+            margin: 20px;
+            width: calc(100% - 40px); /* Adjust width to fit the content inside the wrapper */
+    border-collapse: collapse;
+    margin: 10px;
+}
+td
+{
+    margin: 20px;
+    margin-top: 20px;
+    font-size: large;
+    font-style: tahoma;
+    font-weight: 500;
+    padding: 8px; /* Add padding to cells */
+    font-size: 16px; /* Adjust font size as needed */
+    font-family: 'poppins', sans-serif; /* Inherit font-family */
+    text-align: center;
+}
