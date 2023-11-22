@@ -6,7 +6,7 @@ function ModifyRow(props) {
     const { _id, name, votes } = props.obj;
 
     const handleClick = () => {
-        Axios.delete("http://localhost:4000/voteRoute/delete-vote/" + _id)
+        Axios.delete("https://voting-backend-iayq.onrender.com/voteRoute/delete-vote/" + _id)
             .then((res) => {
                 if (res.status === 200) {
                     alert("Record deleted successfully");

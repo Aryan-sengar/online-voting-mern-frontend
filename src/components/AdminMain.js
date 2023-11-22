@@ -16,17 +16,22 @@ function AdminMain() {
                 <div className="form-box login">
                     <h2>Select one :</h2>
                     <br />
-                    <br />
+                    <Link to="/adddelete" style={linkStyle}>
                     <button type="submit" className="btn" id="redirectButton1">
-                        <Link to="/adddelete" style={linkStyle}>Add</Link>
+                        Add
                     </button>
+                    </Link>
+                    <Link to="/modify" style={linkStyle}>
                     <button type="submit" className="btn" id="redirectButton2">
-                        <Link to="/modify" style={linkStyle}>Delete</Link>
+                        Delete
                     </button>
+                    </Link>
                     <div className="box">
+                    <Link to="/viewvotes" style={linkStyle}>
                         <button className="btn">
-                            <Link to="/viewvotes" style={linkStyle}>Live Voting</Link>
+                            Live Voting
                         </button>
+                        </Link>
                     </div>
                 </div>
             </div>

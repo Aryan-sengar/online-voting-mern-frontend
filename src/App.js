@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter,Routes,Route,Link,NavLink } from 'react-router-dom';
 import Main from './components/Main';
@@ -11,6 +10,9 @@ import AdminMain from './components/AdminMain';
 import AddDelete from './components/Add';
 import Modify from './components/Modify';
 import ViewVotes from './components/ViewVotes';
+import About from './components/about';
+import Motto from './components/motto';
+import Contact from './components/contact';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
     <Head></Head>
       <Routes>
       <Route path="/main" element={<Main />} />
+      <Route path="/motto" element={<Motto />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/adddelete" element={<AddDelete />} />
       <Route path="/modify" element={<Modify />} />
       <Route path="/adminmain" element={<AdminMain />} />
@@ -27,6 +31,7 @@ function App() {
       <Route path="/vote" element={<Vote />} />
       <Route path="/viewvotes" element={<ViewVotes />} />
       <Route path="/vote/thanks" element={<Thanks />} />
+      <Route path="/about" element={<About />} />
       
       </Routes>
       </BrowserRouter>    

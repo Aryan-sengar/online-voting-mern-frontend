@@ -11,7 +11,7 @@ function Vote() {
     const [selectedParty, setSelectedParty] = useState('');
 
     useEffect(() => {
-        Axios.get("http://localhost:4000/voteRoute")
+        Axios.get("https://voting-backend-iayq.onrender.com/voteRoute")
             .then((res) => {
                 setParties(res.data);
             })
@@ -26,7 +26,7 @@ function Vote() {
         event.preventDefault();
         const partyToUpdate = parties.find(party => party.name === selectedParty);
         if (partyToUpdate) {
-            Axios.put(`http://localhost:4000/voteRoute/update-vote/${partyToUpdate._id}`, { votes: partyToUpdate.votes + 1 })
+            Axios.put(`https://voting-backend-iayq.onrender.com/voteRoute/update-vote/${partyToUpdate._id}`, { votes: partyToUpdate.votes + 1 })
                 .then((res) => {
                     if (res.status === 200)
                         alert("Vote cast successfully");

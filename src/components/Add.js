@@ -11,7 +11,7 @@ function AddDelete(props)
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = { name: name, votes: 0 };
-        Axios.post("http://localhost:4000/voteRoute/create-vote", data)
+        Axios.post("https://voting-backend-iayq.onrender.com/voteRoute/create-vote", data)
         .then((res) => {
             if(res.status === 200)
                 alert("Record added successfully");
