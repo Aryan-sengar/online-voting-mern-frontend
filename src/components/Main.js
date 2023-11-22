@@ -15,7 +15,7 @@ function Main() {
     const handleLogin = async (e) => {
       e.preventDefault();
       try {
-          const response = await axios.post('https://voting-backend-iayq.onrender.com/userRoute/login', {
+          await axios.post('https://voting-backend-iayq.onrender.com/userRoute/login', {
               username,
               password
           });
