@@ -1,8 +1,5 @@
-import Axios from "axios";
-import { Link } from "react-router-dom";
-
 function VotesListRow(props) {
-    const { _id, name, votes } = props.obj;
+    const { name, votes } = props.obj;
     return (
         <tr>
             <td>{name}</td>

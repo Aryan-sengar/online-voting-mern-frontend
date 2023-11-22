@@ -1,6 +1,5 @@
 import React from 'react';
 import './Thanks.css';
-import { Link } from 'react-router-dom';
 import { CloseOutline } from 'react-ionicons';
 
 function Thanks() {

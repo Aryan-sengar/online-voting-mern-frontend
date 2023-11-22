@@ -1,9 +1,8 @@
 import Axios from "axios";
-import { Link } from "react-router-dom";
 import './Modify.css';
 
 function ModifyRow(props) {
-    const { _id, name, votes } = props.obj;
+    const { _id, name} = props.obj;
 
     const handleClick = () => {
         Axios.delete("https://voting-backend-iayq.onrender.com/voteRoute/delete-vote/" + _id)

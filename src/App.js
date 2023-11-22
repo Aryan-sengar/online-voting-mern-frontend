@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter,Routes,Route,Link,NavLink } from 'react-router-dom';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Main from './components/Main';
 import Admin from './components/Admin';
 import Vote from './components/Vote';

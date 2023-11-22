@@ -20,7 +20,7 @@ function Main() {
               password
           });
 
-          const { token, userId } = response.data;
+          //const { token, userId } = response.data;
           console.log('Login Successful!');
 
           navigate('/vote'); 
@@ -62,7 +62,7 @@ function Main() {
                             <label>
                                 <input type="checkbox" required /> Remember me
                             </label>
-                            <a href="#"> <Link to="/reg">Forgot Password?</Link> </a>
+                            <Link to="/reg">Forgot Password?</Link>
                         </div>
                         <button type="submit" className="btn" id="redirectButton3">Login</button>
                         {error && <p style={{ color: 'red' }}>{error}</p>}
