@@ -5,6 +5,7 @@ import { PersonOutline, LockClosedOutline, CloseOutline } from 'react-ionicons';
 import Axios from 'axios';
 
 function Reg() {
+    const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
